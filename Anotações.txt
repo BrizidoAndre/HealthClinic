@@ -1,0 +1,66 @@
+Tela do médico
+-Ver as consultas associados a ele
+-Alterar as consultas
+
+Tela do paciente
+-Visualizar futuras consultas
+-Se cadastrar
+-Fazer uma requisição
+
+Tela do administrador
+-Cadastrar consultas
+-Cancelar consultas
+-Alterar consultas
+-Cadastrar usuários
+-Cadastrar Eventos
+-Alterar Eventos
+-Deletar Eventos
+
+Adicionais=
+
+Especialidade{
+Id,
+TipoEspecialidade
+}
+
+TipoUsuario{
+id,
+tipoUsuario
+}
+
+Usuario{
+idTipoUsuario,
+Id,
+TipoUsuario
+}
+
+
+Eventos{
+Data
+Hora
+Nome
+Id
+Requisitos
+Descrição
+}
+
+Requisição{
+IdPaciente,
+Especialidade médico,
+Dia e hora
+}
+
+Agendamento{
+TipodeAgendamento = Consulta ou requisição,
+Dia e hora,
+IdMédico,
+IdPaciente,
+}
+
+Consulta *apenas adms{
+Comentário
+}
+
+Requisição *apenas pacientes{
+
+}
